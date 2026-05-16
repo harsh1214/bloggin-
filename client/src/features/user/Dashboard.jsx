@@ -25,7 +25,7 @@ export default function Dashboard() {
                     <div className="w-full flex flex-col items-end justify-start">
                         <div className="w-fit flex flex-row items-center justify-end gap-4">
                             <div className="w-fit">
-                                <img className="max-w-28 max-h-28 w-full h-full object-center object-cover aspect-square" src="/user.svg" alt="" />
+                                <img className="max-w-28 max-h-28 w-full h-full object-center object-cover aspect-square rounded-full" src={user.image || "/user.svg"} alt="" />
                             </div>
                             <div className="max-w-50 w-full flex flex-col items-start justify-start">
                                 <h3 className="text-lg font-medium">{user.name}</h3>

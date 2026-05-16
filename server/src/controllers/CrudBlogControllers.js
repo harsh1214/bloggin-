@@ -189,6 +189,7 @@ const uploadEditorImage = async (req, res) => {
         return res.status(500).json({ success: false, error: "Image upload failed" })
     }
 }
+
 const getPublicId = (url) => {
     if (!url) {
         return null

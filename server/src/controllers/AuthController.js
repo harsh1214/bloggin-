@@ -86,7 +86,8 @@ const login = async (req, res) => {
                 id: userExist.id,
                 email: email,
                 name: userExist.name,
-                blogsCount: visiblePostsCount
+                blogsCount: visiblePostsCount,
+                image: userExist.image
             },
             token,
         }
@@ -120,6 +121,7 @@ const me = async (req, res) => {
             id: req.user.id,
             email: req.user.email,
             name: user.name,
+            image: user.image || null,
             blogsCount
         });
     } catch (err) {
