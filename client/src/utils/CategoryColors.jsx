@@ -1,0 +1,30 @@
+const categoryColors = {
+    "Technology": "bg-blue-100 text-blue-600",
+    "Business & Startups": "bg-indigo-100 text-indigo-600",
+    "Finance": "bg-yellow-100 text-yellow-700",
+    "Health & Wellness": "bg-pink-100 text-pink-600",
+    "Lifestyle": "bg-purple-100 text-purple-600",
+    "Education": "bg-sky-100 text-sky-600",
+    "Self Improvement": "bg-teal-100 text-teal-600",
+    "Productivity": "bg-emerald-100 text-emerald-600",
+    "Relationships": "bg-rose-100 text-rose-600",
+    "Travel": "bg-orange-100 text-orange-600",
+    "Food & Cooking": "bg-amber-100 text-amber-700",
+    "Entertainment": "bg-fuchsia-100 text-fuchsia-600",
+    "Movies & TV": "bg-violet-100 text-violet-600",
+    "Music": "bg-cyan-100 text-cyan-600",
+    "Sports": "bg-lime-100 text-lime-600",
+    "Science": "bg-blue-200 text-blue-800",
+    "Environment": "bg-green-200 text-green-800",
+    "Politics": "bg-red-100 text-red-600",
+    "Society & Culture": "bg-gray-200 text-gray-700",
+    "Philosophy": "bg-stone-200 text-stone-700",
+    "History": "bg-yellow-200 text-yellow-800",
+    "Writing & Blogging": "bg-neutral-200 text-neutral-700",
+    "Design": "bg-pink-200 text-pink-700",
+    "Art & Creativity": "bg-purple-200 text-purple-700",
+    "Fashion": "bg-rose-200 text-rose-700",
+    "Default": "bg-gray-100 text-gray-600"
+};
+
+export default categoryColors

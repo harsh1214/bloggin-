@@ -1,0 +1,30 @@
+const CategoriesList = [
+    "Technology",
+    "Business & Startups",
+    "Finance",
+    "Health & Wellness",
+    "Lifestyle",
+    "Education",
+    "Self Improvement",
+    "Productivity",
+    "Relationships",
+    "Travel",
+    "Food & Cooking",
+    "Entertainment",
+    "Movies & TV",
+    "Music",
+    "Sports",
+    "Science",
+    "Environment",
+    "Politics",
+    "Society & Culture",
+    "Philosophy",
+    "History",
+    "Writing & Blogging",
+    "Design",
+    "Art & Creativity",
+    "Fashion",
+    "Default"
+];
+
+export default CategoriesList;
