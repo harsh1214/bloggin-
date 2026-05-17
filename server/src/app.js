@@ -10,11 +10,14 @@ import cookieParser from "cookie-parser";
 config();
 const app = express();
 
+// origin: "http://localhost:5173",
 app.use(cors({
-    // origin: "http://localhost:5173",
-    origin: "https://bloggin-roan.vercel.app",
+    origin: [
+        "https://bloggin-roan.vercel.app"
+    ],
     credentials: true
 }));
+
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

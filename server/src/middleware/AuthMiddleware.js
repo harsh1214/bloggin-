@@ -1,7 +1,6 @@
 import jwt from "jsonwebtoken";
 import { prisma } from "../config/db.js";
 
-// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRkNDlhN2MzLTQ3ZGEtNGJiOC1hMjVmLWVkNGY1N2Q2MTdmZiIsImlhdCI6MTc3NzM2OTcxMSwiZXhwIjoxNzc3OTc0NTExfQ.Ed7k73TtGzNuoAQ6Qqw3J6Ikqx3msbslyyIJ56YdfgU
 export const AuthMiddleware = async (req, res, next) => {
     let token = req.cookies?.jwt;
 
