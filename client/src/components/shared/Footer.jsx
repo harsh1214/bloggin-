@@ -32,10 +32,10 @@ export default function Footer() {
                         </div>
                         <div className="flex flex-col items-start justify-start gap-3 md:w-fit w-full">
                             <h4 className="font-bold">Tags</h4>
-                            <a href="/">Style</a>
-                            <a href="/">Fashion</a>
-                            <a href="/">Coding</a>
-                            <a href="/">Travel</a>
+                            <a href="/blogs?category=Lifestyle">Lifestyle</a>
+                            <a href="/blogs?category=Fashion">Fashion</a>
+                            <a href="/blogs?category=Technology">Technology</a>
+                            <a href="/blogs?category=Society+%26+Culture">Culture</a>
                         </div>
                         <div className="flex flex-col items-start justify-start gap-3 md:w-fit w-full">
                             <h4 className="font-bold">Social</h4>
