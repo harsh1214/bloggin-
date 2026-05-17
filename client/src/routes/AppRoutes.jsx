@@ -12,6 +12,7 @@ import NotFound from "../pages/NotFound"
 import CreateBlog from "../features/user/CreateBlog"
 import EditBlogPage from "@/features/user/EditBlogPage"
 import Profile from "@/features/user/Profile"
+import ForgotPassword from "@/features/auth/ForgotPassword"
 // import Loading from "../components/ui/Loading"
 
 export const appRoutes = createBrowserRouter([
@@ -33,6 +34,10 @@ export const appRoutes = createBrowserRouter([
                     {
                         path: "register",
                         element: <Register />
+                    },
+                    {
+                        path: "forgot-password",
+                        element: <ForgotPassword />
                     }
                 ]
             },

@@ -9,11 +9,11 @@ async function main() {
     const password = await bcrypt.hash("password123", salt);
 
     const user1 = await prisma.user.create({
-        data: { name: "Sam Miller", email: "sam@example.com", password }
+        data: { name: "Sam Miller", email: "dev.yadavharsh@gmail.com", password }
     });
 
     const user2 = await prisma.user.create({
-        data: { name: "John Doe", email: "john@example.com", password }
+        data: { name: "John Doe", email: "yadav.harsh.subhash@gmail.com", password }
     });
 
     // CATEGORIES

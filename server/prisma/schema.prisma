@@ -10,14 +10,16 @@ datasource db {
 }
 
 model User {
-    id        String   @id @default(uuid())
-    name      String
-    email     String   @unique
-    password  String
-    image     String?
-    blogs     Blogs[]
-    likes     Like[]
-    createdAt DateTime @default(now())
+    id             String    @id @default(uuid())
+    name           String
+    email          String    @unique
+    password       String
+    image          String?
+    resetOtp       String?
+    resetOtpExpiry DateTime?
+    blogs          Blogs[]
+    likes          Like[]
+    createdAt      DateTime  @default(now())
 }
 
 model Blogs {
