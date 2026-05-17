@@ -13,12 +13,12 @@ export default function Navbar() {
     const handleLogout = async () => {
         try {
             await api.post("/auth/logout");
+            sessionStorage.setItem("skipAuthToast", "true");
+            logout();
         }
         catch (err) {
             console.log(err);
         }
-        sessionStorage.setItem("skipAuthToast", "true");
-        logout();
     }
 
     const handlemobileMenuOpen = () => {
@@ -47,7 +47,7 @@ export default function Navbar() {
                                     <Link to="/profile" onClick={handlemobileMenuOpen} className="font-semibold hover:underline text-lg">Profile</Link>
                                     <Link onClick={handlemobileMenuOpen} className="font-semibold hover:underline text-lg" to="/create-blog">Create Blog</Link>
                                     <button onClick={handleLogout}>
-                                        <Link onClick={handlemobileMenuOpen} className="font-semibold hover:underline text-lg" to="/login">Logout</Link>
+                                        <p onClick={handlemobileMenuOpen} className="font-semibold hover:underline text-lg">Logout</p>
                                     </button> 
                                 </>
                                 :

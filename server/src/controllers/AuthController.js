@@ -98,7 +98,7 @@ const login = async (req, res) => {
 
 const logout = async (req, res) => {
     try {
-        res.clearCookie("jwt", "", {
+        res.clearCookie("jwt", {
             httpOnly: true,
             secure: process.env.NODE_ENV === "production",
             sameSite: "none",
