@@ -92,7 +92,7 @@ export default function Register() {
                                 {loading ? <p>Loading...</p>
                                     :
                                     <>
-                                        <button disabled={loading} type="submit" className="btn flex items-center justify-center border border-transparent text-base font-semibold rounded-3xl text-white bg-blue-500 hover:bg-blue-700 hover:cursor-pointer py-2 md:text-lg px-8">Log In</button>
+                                        <button disabled={loading} type="submit" className="btn flex items-center justify-center border border-transparent text-base font-semibold rounded-3xl text-white bg-blue-500 hover:bg-blue-700 hover:cursor-pointer py-2 md:text-lg px-8">Sign Up</button>
                                         <Link to="/forgot-password" className="font-normal text-blue-500">
                                             Forgot Password?
                                         </Link>
