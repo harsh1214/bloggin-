@@ -1,7 +1,13 @@
-## Bloggin' 📝
+## Bloggin'
 
 A modern full-stack blogging platform built with React, Express, Prisma, PostgreSQL, and Cloudinary.\
 Users can create, edit, publish, search, and manage blogs with authentication, profiles, likes, drafts, image uploads, and a rich text editor.
+
+------------------------------------------------------------------------
+
+### Live Demo
+
+🚀 Live Website: https://bloggin-roan.vercel.app/
 
 ------------------------------------------------------------------------
 
