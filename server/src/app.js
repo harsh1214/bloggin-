@@ -10,22 +10,20 @@ import cookieParser from "cookie-parser";
 config();
 const app = express();
 
-app.use(
-    cors({
-        origin: [
-            "http://localhost:5173",
-            "https://bloggin-roan.vercel.app"
-        ],
-        credentials: true,
-        methods: [
-            "GET",
-            "POST",
-            "PUT",
-            "PATCH",
-            "DELETE"
-        ]
-    })
-);
+app.use(cors({
+    origin: [
+        "http://localhost:5173",
+        "https://bloggin-roan.vercel.app"
+    ],
+    credentials: true,
+    methods: [
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE"
+    ]
+}));
 
 app.use(cookieParser());
 app.use(express.json());
@@ -34,6 +32,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/auth', Auth);
 app.use('/blog', Blog);
 app.use('/like', Like);
-app.use('/user', User)
+app.use('/user', User);
+
+app.get("/health", (req, res) => {
+    res.status(200).json({ message: "Server is healthy" });
+});
 
 export default app;
